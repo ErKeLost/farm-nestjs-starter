@@ -7,7 +7,7 @@ export default defineConfig({
     },
     script: {
       plugins: [],
-      target: 'esnext',
+      target: 'es2019',
       parser: {
         tsConfig: {
           decorators: true,
@@ -18,14 +18,14 @@ export default defineConfig({
       },
       decorators: {
         legacyDecorator: true,
-        decoratorMetadata: false,
+        decoratorMetadata: true,
         decoratorVersion: '2021-12',
         includes: ['src/main.ts'],
         excludes: [],
       },
     },
     minify: false,
-    persistentCache: false,
+    lazyCompilation: true,
     output: {
       format: 'esm',
       targetEnv: 'node',
