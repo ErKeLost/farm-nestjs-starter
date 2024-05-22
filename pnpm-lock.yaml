@@ -45,8 +45,8 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1
       farmup:
-        specifier: ^0.0.3
-        version: 0.0.3(bufferutil@4.0.8)(utf-8-validate@6.0.4)
+        specifier: ^0.0.4
+        version: 0.0.4(bufferutil@4.0.8)(utf-8-validate@6.0.4)
       ioredis:
         specifier: ^5.4.1
         version: 5.4.1
@@ -1936,8 +1936,8 @@ packages:
     resolution: {integrity: sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==}
     engines: {node: '>=4'}
 
-  farmup@0.0.3:
-    resolution: {integrity: sha512-f7VlNQ2uh+cIyx8dBJYKRemI8mhGAe0qFaJGvNmEsWCl8JCAdJSe4KjAhuYJ3ukMjcWkjM/rIjN86Sp44+rkPA==}
+  farmup@0.0.4:
+    resolution: {integrity: sha512-yOVLTV0x+gdkxEmG5PqjWdHtJ9AsfWoHzPzdfEVFxrMEamL1Jzw0y5xjTLY0bFZ2HbRqk7uiiMSJCtPoc3gC2Q==}
     hasBin: true
 
   fast-deep-equal@3.1.3:
@@ -6513,7 +6513,7 @@ snapshots:
       iconv-lite: 0.4.24
       tmp: 0.0.33
 
-  farmup@0.0.3(bufferutil@4.0.8)(utf-8-validate@6.0.4):
+  farmup@0.0.4(bufferutil@4.0.8)(utf-8-validate@6.0.4):
     dependencies:
       '@changesets/cli': 2.27.3
       '@farmfe/core': 1.1.9(bufferutil@4.0.8)(utf-8-validate@6.0.4)

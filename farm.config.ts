@@ -21,15 +21,16 @@ export default defineConfig({
         decoratorMetadata: true,
         decoratorVersion: '2021-12',
         includes: ['src/main.ts'],
-        excludes: [],
+        excludes: ['node_modules/**/*'],
       },
     },
+    presetEnv: false,
     minify: false,
     lazyCompilation: true,
     output: {
       format: 'esm',
       targetEnv: 'node',
-      entryFilename: '[entryName].mjs',
+      entryFilename: '[entryName].js',
       filename: '[name].[hash].mjs',
     },
     external: [
