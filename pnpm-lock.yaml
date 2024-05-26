@@ -45,8 +45,8 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1
       farmup:
-        specifier: file:/Users/adny/typescript/farmup
-        version: file:../../../adny/typescript/farmup(bufferutil@4.0.8)(utf-8-validate@6.0.4)
+        specifier: ^0.0.7
+        version: 0.0.7(bufferutil@4.0.8)(utf-8-validate@6.0.4)
       ioredis:
         specifier: ^5.4.1
         version: 5.4.1
@@ -1936,12 +1936,8 @@ packages:
     resolution: {integrity: sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==}
     engines: {node: '>=4'}
 
-  farmup@0.0.2:
-    resolution: {integrity: sha512-+8TKfOnzLWh5g0DcEIBdv6M5OBIz9/LkdRUc3439ncT7ur71hUYjvxkKLHUbGZ01djO9wW0VYVAEWITBSQ1Dqg==}
-    hasBin: true
-
-  farmup@file:../../../adny/typescript/farmup:
-    resolution: {directory: ../../../adny/typescript/farmup, type: directory}
+  farmup@0.0.7:
+    resolution: {integrity: sha512-/WilPr4KsQffX1O4bjZbAwoJxUiMRufY/iIsY0NnPygusRgXLK31VZKlPHJrtJGlmiqNfvZq4Yq7ODKwvFMRWw==}
     hasBin: true
 
   fast-deep-equal@3.1.3:
@@ -2128,6 +2124,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@9.3.5:
     resolution: {integrity: sha512-e1LleDykUz2Iu+MTYdkSsuWX8lvAjAcs0Xef0lNIu0S2wOAzuTxCJtcd9S3cijlwYF18EsU3rzb8jPVobxDh9Q==}
@@ -6517,28 +6514,11 @@ snapshots:
       iconv-lite: 0.4.24
       tmp: 0.0.33
 
-  farmup@0.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.4):
+  farmup@0.0.7(bufferutil@4.0.8)(utf-8-validate@6.0.4):
     dependencies:
       '@changesets/cli': 2.27.3
       '@farmfe/core': 1.1.9(bufferutil@4.0.8)(utf-8-validate@6.0.4)
       cac: 6.7.14
-      fs-extra: 11.2.0
-      glob: 10.3.16
-      lodash-es: 4.17.21
-      open: 10.1.0
-      tmp: 0.2.3
-    transitivePeerDependencies:
-      - bufferutil
-      - debug
-      - supports-color
-      - utf-8-validate
-
-  farmup@file:../../../adny/typescript/farmup(bufferutil@4.0.8)(utf-8-validate@6.0.4):
-    dependencies:
-      '@changesets/cli': 2.27.3
-      '@farmfe/core': 1.1.9(bufferutil@4.0.8)(utf-8-validate@6.0.4)
-      cac: 6.7.14
-      farmup: 0.0.2(bufferutil@4.0.8)(utf-8-validate@6.0.4)
       fs-extra: 11.2.0
       glob: 10.3.16
       lodash-es: 4.17.21
