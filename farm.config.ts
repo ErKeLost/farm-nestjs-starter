@@ -25,7 +25,12 @@ export default defineConfig({
       },
     },
     presetEnv: false,
+    // minify: {
+    //   mode: "minify-module",
+    // },
     minify: false,
+    persistentCache: false,
+    sourcemap: false,
     lazyCompilation: true,
     output: {
       format: 'esm',
