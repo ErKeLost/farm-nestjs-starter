@@ -8,8 +8,8 @@ export default function NestPlugin(options?: Config['config']) {
     name: 'NestPlugin',
     config: (config) => {
       const mode = config.compilation.mode ?? process.env.NODE_ENV ?? 'development';
-      console.log(mode);
       const isDev = mode === 'development';
+
       return {
         compilation: {
           input: {
